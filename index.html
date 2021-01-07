@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+ <head>
+<title>Jager</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"> 
+<link rel='stylesheet' href='style.css'>
+</head>
+<body>
+
+    <video playsinline autoplay muted>
+        <source src="assets/compressed Jager final video.mp4" type="video/mp4">
+   </video>
+
+  <div class="container">
+    <img src="assets/SVG/takearisklogo.svg">
+</div>
+<div class="info-grab">
+    <button class="primarybtn" id="CTA" onclick="signUpBox()">Sign-up</button>
+</div>
+
+
+<div class="form-popup" id="myForm">
+      <h1>Join Jager and get a free wristband.</h1>
+      <input class="form-field" type="text" placeholder="First Name" name="first-name" required><br>
+      <input class="form-field" type="text" placeholder="Last Name" name="last-name" required><br>
+      <input class="form-field" type="text" placeholder="Enter Email" name="email" required><br>
+      <input class="form-field" type="password" placeholder="Enter Password" name="psw" required>
+    <div class="form-buttons">
+      <button type="submit" class="secondarybtn" >Sign-Up</button>
+      <button type="submit" class="tertiarybtn" onclick="closeBox()">Close</button>
+    </div>
+    </form>
+  </div> 
+
+
+
+
+  <script>
+    function signUpBox() {
+      document.getElementById("myForm").style.visibility = "visible"
+
+    }
+    
+    function closeBox() {
+      document.getElementById("myForm").style.visibility = "hidden";
+
+    }
+</script>
+
+
+
+</body>
